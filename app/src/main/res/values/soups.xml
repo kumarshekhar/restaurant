@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="soups">
+        <item>Hot and Sour</item>
+        <item>Tomato</item>
+        <item>Veg Soup</item>
+        <item>Chicken Soup</item>
+    </string-array>
+
+</resources>

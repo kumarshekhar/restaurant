@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shekhar.yummyindia.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainImageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/foodMenuLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:foregroundGravity="bottom"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/foodMenuIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_action_food" />
+            <TextView
+                android:id="@+id/foodMenuTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/foodMenuIcon"
+                android:textAlignment="center"
+                android:text="Food Menu"
+                android:textColor="#0059FF"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recipesLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:foregroundGravity="bottom"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/recipesIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_action_recipes" />
+            <TextView
+                android:id="@+id/recipesTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/recipesIcon"
+                android:textAlignment="center"
+                android:text="Recipes"
+                android:textColor="#0059FF"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/row1"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/reviewsLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:foregroundGravity="bottom"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/reviewsIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_action_reviews" />
+            <TextView
+                android:id="@+id/reviewsTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/reviewsIcon"
+                android:textAlignment="center"
+                android:text="Reviews"
+                android:textColor="#0059FF"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/signInLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:foregroundGravity="bottom"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/signInIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_action_login" />
+            <TextView
+                android:id="@+id/signInTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/signInIcon"
+                android:textAlignment="center"
+                android:text="Sign In"
+                android:textColor="#0059FF"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:text="\u00A9 Shekhar" />
+</LinearLayout>
